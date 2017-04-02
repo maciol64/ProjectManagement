@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="User Management">
+        <menu
+            android:id="@+id/userSettings_group">
+            <item android:title="switch user"
+                  android:id="@+id/switchUser_item"
+                  android:icon="@mipmap/ic_launcher"/>
+            <item android:title="Add user"
+                  android:id="@+id/newUser_item"
+                  android:icon="@android:drawable/ic_input_add"/>
+            <item android:title="settings"
+                  android:id="@+id/settings_item"
+                  android:icon="@drawable/ic_menu_manage"/>
+        </menu>
+    </item>
+
+    <item android:title="Your Projects">
+        <menu
+            android:id="@+id/userProjects_group">
+            <item android:title="project 2"
+                  android:id="@+id/testProject2_item"/>
+            <item android:title="project 1"
+                  android:id="@+id/testProject1_item"/>
+        </menu>
+    </item>
+</menu>

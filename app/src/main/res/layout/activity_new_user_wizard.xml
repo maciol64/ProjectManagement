@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_new_user_wizard"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.maciol64.projectmanagement.NewUserWizard"
+    android:background="@android:drawable/screen_background_light_transparent"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_linearLayout">
+
+        <TextView
+            android:text="username:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/username_editText"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:layout_marginTop="20dp"
+            android:hint="insert username"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1dp"
+            android:layout_below="@+id/username_editText"
+            android:layout_alignParentStart="true">
+        </View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_linearLayout"
+        android:layout_marginTop="30dp"
+        android:id="@+id/password_linearLayout">
+
+        <TextView
+            android:text="password:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password_editText"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:layout_marginTop="20dp"
+            android:hint="insert password"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:layout_below="@+id/password_editText"
+            android:layout_alignParentStart="true">
+        </View>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Add User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addUser_textView"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"
+        android:id="@+id/view7"
+        android:layout_above="@+id/addUser_textView"
+        android:layout_alignParentStart="true">
+    </View>
+
+    <CheckBox
+        android:text="login this user on start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_checkBox"
+        android:layout_below="@+id/remeberPassword_checkBox"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"/>
+
+    <CheckBox
+        android:text="remember password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remeberPassword_checkBox"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
